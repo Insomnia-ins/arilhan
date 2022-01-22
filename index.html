@@ -1,0 +1,75 @@
+<div class="w1"style="height: 200px;width: 500px; margin-left: 700px;background:#781d37;padding-top:90px;">
+    <div  class="test1" style="margin-left:200px;background: black; width: 90px;height: 40px;">
+        <h1 style="color:white">ТЕСТ</h1>
+    </div>
+</div>
+<div class="w2"style="height: 200px;width: 500px; margin-left: 700px;background:#781d37;;display: none;">
+    <img style="height: 200px;width: 500px;"src="Screenshot_534.png">
+</div>
+
+<div style="height: 200px;width: 500px; margin-left: 700px;background:#781d37;padding-top:90px;display: none;">
+    
+</div>
+
+<div class="question1" style="background: #781d37; height: 480px; width:500px;display: none;margin-left: 700px; ">
+    <div style="display: flex;">
+         <img src = "Screenshot_531.png" style="width: 250px;height: 200px;">
+     <img src = "Screenshot_532.png" style="width: 250px;height: 200px;">   
+    </div>
+    <div style="background:black;">
+        <h1 style="color:white">кто на фотке?</h1>
+    </div>
+    <div class="variant1" style="background: #781d37; width: 500px; height: 50px;">
+       <h1>шерлок</h1>
+    </div>
+    <div class="variant2" style="background: #781d37; width: 500px; height: 50px;">
+            <h1>Ю</h1>
+    </div>
+    <div class="variant3" style="background: #781d37; width: 500px; height: 50px;">
+            <h1>Максим</h1>
+     </div>   
+</div>
+<div  class="question2" style="background: #781d37; height:250px; width:500px; display: none;margin-left: 700px;">
+    <div style="background: black; width: 500px; height: 50px;">
+       <h1 style="color: white">как звали сестру главного героя аниме Шарлота?</h1> 
+    </div>
+    <div class="variant1" style="background: #781d37; width: 500px; height:50px;">
+        <h1>наруто</h1>
+    </div>
+    <div class="variant2" style="background: #781d37; width: 500px; height: 50px;"> 
+        <h1>Аюми Отосака</h1>
+    </div>
+    <div class="variant3" style="background: #781d37; width: 500px; height: 50px;">
+        <h1>саске</h1>
+    </div>
+</div>
+<div  class="question3" style="background:#781d37; height: 320px; width:500px; display:none;margin-left:700px;">
+    <div style="background: black; width: 500px; height: 90px;">
+      <h1 style="color: white">как умерла сестра главного героя аниме Шарлота?</h1>
+    </div>
+
+    <div class="variant1" style="background: #781d37; width: 500px; height: 50px;">
+        <h1> молнии</h1>
+    </div>
+    <div class="variant2" style="background: #781d37; width: 500px; height: 50px;">
+       <h1>из-за обвала камней</h1>
+    </div>
+    <div class="variant3" style="background: #781d37; width: 500px; height: 50px;">
+        <h1>словил пулю во время войны</h1>
+    </div>
+</div>
+
+<div class="s1"style="background: black;width: 500px; height: 500px;display: none "></div>
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+    find("w1 test1").click("show","question1");
+    find("question1 variant1").click("alert","неправильно");
+    find("question1 variant2").click("show","question2", "правильно");
+    find("question3 variant1").click("alert","неправильно");
+    find("question2 variant1").click("alert","неправильно");
+    find("question2 variant2").click("show","question3", "правильно");
+    find("question3 variant3").click("alert","неправильно");
+    find("question3 variant1").click("alert","неправильно");
+    find("question3 variant2").click("show","w2", "правильно");
+    find("question3 variant3").click("alert","неправильно");
+</script>
